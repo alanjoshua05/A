@@ -33,7 +33,7 @@ st.title('Daily quiz')
 
 # Get input from the user
 name = st.text_input('Enter Name')
-email = st.text_input('Enter your college id')
+email = st.text_input('Enter your college id to view the questions')
 
 
 if email[7:] != "@drngpit.ac.in" or len(email) > 21:

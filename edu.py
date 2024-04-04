@@ -39,3 +39,4 @@ else:
     # Update the sheet with the entered name
         sheet.append_row([current_date.strftime('%d-%m-%Y'), name, email, q2, q1])
         st.success("Added sucessfully")
+        st.balloons()

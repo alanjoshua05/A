@@ -34,7 +34,7 @@ if email[7:] != "@drngpit.ac.in" or len(email) > 21:
 elif is_blocked_time():
     st.error("Sorry, the quiz is not available at the moment. Please try again later.")
 else:
-    st.success("Hello ngpian")
+    st.success("Hello Ngpian")
     if st.button("Submit"):
     # Update the sheet with the entered name
         sheet.append_row([current_date.strftime('%d-%m-%Y'), name, email, q2, q1])

@@ -35,9 +35,7 @@ elif is_blocked_time():
     st.error("Sorry, the quiz is not available at the moment. Please try again later.")
 else:
     st.success("Hello ngpian")
-
-
-if st.button("Submit"):
+    if st.button("Submit"):
     # Update the sheet with the entered name
-    sheet.append_row([current_date.strftime('%d-%m-%Y'), name, email, q2, q1])
-    st.success("Added sucessfully")
+        sheet.append_row([current_date.strftime('%d-%m-%Y'), name, email, q2, q1])
+        st.success("Added sucessfully")

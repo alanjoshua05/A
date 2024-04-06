@@ -40,6 +40,6 @@ elif is_blocked_time():
 else:
     if st.button("Submit"):
             # Update the sheet with the entered data
-            sheet.append_row([current_date.strftime('%d/%m/%Y'), name, email, q2, q1])
+            sheet.append_row([current_date.strftime('%Y-%m-%d'), name, email, q2, q1])
             st.success("Added successfully")
             st.balloons()

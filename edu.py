@@ -24,7 +24,7 @@ st.title('Daily quiz')
 
 # Get input from the user
 name = st.text_input('Enter Name')
-email = st.text_input('Enter your college Mail id (ex 23cb000@drngpit.ac.in)')
+email = st.text_input('Enter your college id')
 
 st.subheader("Questions")
 q2 = st.radio("1)hi", ["hello", "hey"], index=None)
@@ -32,7 +32,7 @@ q1 = st.text_area("2)how are you?")
 current_date = datetime.now().date()
 
 
-if email[7:] != "@drngpit.ac.in" or len(email) > 21:
+if "@drngpit.ac.in" not in email or len(email) > 21:
     st.error("Enter your college id or ensure the id doesn't have empty space at the end")
 elif is_blocked_time():
         st.error("Sorry, the quiz has been timed out.")
@@ -40,6 +40,6 @@ elif is_blocked_time():
 else:
     if st.button("Submit"):
             # Update the sheet with the entered data
-            sheet.append_row([current_date.strftime('%Y-%m-%d'), name, email, q2, q1])
+            sheet.append_row([current_date.strftime('%d/%m/%Y'), name, email, q2, q1])
             st.success("Added successfully")
             st.balloons()

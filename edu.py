@@ -43,13 +43,13 @@ st.subheader("Questions")
 q1 = st.text_area(f"1){data['Question 1']}")
 
 
-
-if "@drngpit.ac.in" not in email or len(email) > 21:
-    st.error("Enter your college id correctly to open 'Submit' button")
-elif is_blocked_time():
+if st.button("Submit"):
+    if "@drngpit.ac.in" not in email or len(email) > 21:
+        st.error("Enter your college id correctly to open 'Submit' button")
+    elif is_blocked_time():
         st.error("Sorry, the quiz has been timed out.")
-else:
-    if st.button("Submit"):
+    else:
+    
             # Update the sheet with the entered data
             sheet.append_row([current_date.strftime('%Y-%m-%d'), name, email, q1])
             st.success("Added successfully")

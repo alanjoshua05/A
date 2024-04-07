@@ -32,7 +32,7 @@ st.title('Daily quiz')
 
 # Get input from the user
 name = st.text_input('Enter Name')
-email = st.text_input('Enter your college id')
+email = st.text_input('Enter your college mail id (ex: 23cb000@drngpit.ac.in)')
 
 st.subheader("Questions")
 q2 = st.radio(f"1){data['Question 1']}", ["hello", "hey"], index=None)

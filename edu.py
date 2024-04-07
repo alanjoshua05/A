@@ -42,7 +42,7 @@ current_date = datetime.now().date()
 
 
 if "@drngpit.ac.in" not in email or len(email) > 21:
-    st.error("Enter your college id correctly to open Submit button")
+    st.error("Enter your college id correctly to open 'Submit' button")
 elif is_blocked_time():
         st.error("Sorry, the quiz has been timed out.")
 

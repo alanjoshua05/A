@@ -28,8 +28,9 @@ def is_blocked_time():
 
 
 # Streamlit app
+current_date = datetime.now().date()
 st.title('Daily quiz')
-
+st.write(current_date.strftime('%d/%m/%y'))
 # Get input from the user
 name = st.text_input('Enter Name')
 email = st.text_input('Enter your college mail id (ex: 23cb000@drngpit.ac.in)')
@@ -38,7 +39,7 @@ email = email.strip()
 st.subheader("Questions")
 
 q1 = st.text_area(f"1){data['Question 1']}")
-current_date = datetime.now().date()
+
 
 
 if "@drngpit.ac.in" not in email or len(email) > 21:

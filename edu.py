@@ -22,8 +22,8 @@ with open('question.json','r') as file:
 
 
 def is_blocked_time():
-    blocked_start_time = time(18,30)  # e.g., 12:00 AM
-    blocked_end_time = time(23,00)    # e.g., 4:30 AM
+    blocked_start_time = time(21,30)  # e.g., 12:00 AM 18:30
+    blocked_end_time = time(23,00)    # e.g., 4:30 AM 23:00
     now = datetime.now().time()
     return blocked_start_time < now < blocked_end_time
 

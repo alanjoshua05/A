@@ -2,6 +2,7 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import streamlit as st
 from datetime import datetime, time
+import json
 
 scopes = ['https://www.googleapis.com/auth/spreadsheets',
           "https://www.googleapis.com/auth/drive"]
@@ -11,6 +12,13 @@ client = gspread.authorize(credentials)
 
 # Open the desired sheet
 sheet = client.open("FirstSheet").sheet1
+
+with open('question.json','r') as file:
+    json_data = file.read()
+
+    # Parse the JSON data
+    data = json.loads(json_data)
+
 
 def is_blocked_time():
     blocked_start_time = time(21, 0)  # e.g., 5:00 PM
@@ -24,11 +32,11 @@ st.title('Daily quiz')
 
 # Get input from the user
 name = st.text_input('Enter Name')
-email = st.text_input('Enter your college mail id (ex: 23cb000@drngpit.ac.in)')
+email = st.text_input('Enter your college id')
 
 st.subheader("Questions")
-q2 = st.radio("1)hi", ["hello", "hey"], index=None)
-q1 = st.text_area("2)how are you?")
+q2 = st.radio(f"1){data['Question 1']}", ["hello", "hey"], index=None)
+q1 = st.text_area(f"2){data['Question 2']}")
 current_date = datetime.now().date()
 
 

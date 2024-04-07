@@ -23,7 +23,7 @@ with open('question.json','r') as file:
 
 def is_blocked_time():
     blocked_start_time = time(17, 0)  # e.g., 5:00 PM
-    blocked_end_time = time(19, 0)    # e.g., 9:00 PM
+    blocked_end_time = time(20, 0)    # e.g., 9:00 PM
     now = datetime.now().time()
     return blocked_start_time < now < blocked_end_time
 
@@ -48,7 +48,6 @@ if "@drngpit.ac.in" not in email or len(email) > 21:
     st.error("Enter your college id correctly to open 'Submit' button")
 elif is_blocked_time():
         st.error("Sorry, the quiz has been timed out.")
-
 else:
     if st.button("Submit"):
             # Update the sheet with the entered data

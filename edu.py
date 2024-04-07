@@ -3,6 +3,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 import streamlit as st
 from datetime import datetime, time
 import json
+import time
 
 scopes = ['https://www.googleapis.com/auth/spreadsheets',
           "https://www.googleapis.com/auth/drive"]
@@ -19,6 +20,19 @@ with open('question.json','r') as file:
     # Parse the JSON data
     data = json.loads(json_data)
 
+def display_clock():
+    while True:
+        # Get current time
+        current_time = datetime.datetime.now()
+        
+        # Format the time as HH:MM:SS
+        formatted_time = current_time.strftime("%H:%M:%S")
+        
+        # Print the time
+        st.write("Current time:", formatted_time)
+        
+        # Wait for 1 second before updating the time
+        time.sleep(1)
 
 def is_blocked_time():
     blocked_start_time = time(17, 0)  # e.g., 5:00 PM
@@ -29,10 +43,9 @@ def is_blocked_time():
 
 # Streamlit app
 current_date = datetime.now().date()
-a = datetime.now().time()
 st.title('Daily quiz')
 st.write(current_date.strftime('%d/%m/%y'))
-st.write(str(a))
+display_clock()
 # Get input from the user
 name = st.text_input('Enter Name')
 email = st.text_input('Enter your college mail id (ex: 23cb000@drngpit.ac.in)')

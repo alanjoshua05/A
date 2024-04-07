@@ -21,8 +21,8 @@ with open('question.json','r') as file:
 
 
 def is_blocked_time():
-    blocked_start_time = time(21, 0)  # e.g., 5:00 PM
-    blocked_end_time = time(21, 0)    # e.g., 9:00 PM
+    blocked_start_time = time(1, 0)  # e.g., 5:00 PM
+    blocked_end_time = time(4, 0)    # e.g., 9:00 PM
     now = datetime.now().time()
     return blocked_start_time < now < blocked_end_time
 
@@ -36,8 +36,8 @@ email = st.text_input('Enter your college mail id (ex: 23cb000@drngpit.ac.in)')
 email = email.strip()
 
 st.subheader("Questions")
-q2 = st.radio(f"1){data['Question 1']}", ["hello", "hey"], index=None)
-q1 = st.text_area(f"2){data['Question 2']}")
+
+q1 = st.text_area(f"1){data['Question 1']}")
 current_date = datetime.now().date()
 
 
@@ -49,6 +49,6 @@ elif is_blocked_time():
 else:
     if st.button("Submit"):
             # Update the sheet with the entered data
-            sheet.append_row([current_date.strftime('%Y-%m-%d'), name, email, q2, q1])
+            sheet.append_row([current_date.strftime('%Y-%m-%d'), name, email, q1])
             st.success("Added successfully")
             st.balloons()

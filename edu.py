@@ -45,7 +45,7 @@ q1 = st.text_area(f"1){data['Question 1']}")
 
 if st.button("Submit"):
     if "@drngpit.ac.in" not in email or len(email) > 21:
-        st.error("Enter your college id correctly to open 'Submit' button")
+        st.error("Enter your college mail id correctly")
     elif is_blocked_time():
         st.error("Sorry, the quiz has been timed out.")
     else:

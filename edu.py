@@ -30,7 +30,7 @@ def is_blocked_time():
 
 # Streamlit app
 current_date = datetime.now().date()
-st.title('Daily quiz')
+st.title('Daily quiz✍️')
 st.write(current_date.strftime('%d/%m/%y'))
 
 # Get input from the user

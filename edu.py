@@ -23,14 +23,14 @@ with open('question.json','r') as file:
 
 def is_blocked_time():
     blocked_start_time = time(19,30)  # e.g., 12:00 AM 18:30
-    blocked_end_time = time(13,00)    # e.g., 4:30 AM 23:00
+    blocked_end_time = time(19,00)    # e.g., 4:30 AM 23:00
     now = datetime.now().time()
     return blocked_start_time < now < blocked_end_time
 
 
 # Streamlit app
 current_date = datetime.now().date()
-st.title('Daily quiz✍️')
+st.title('Daily quiz📑')
 st.write(current_date.strftime('%d/%m/%y'))
 
 # Get input from the user

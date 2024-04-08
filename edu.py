@@ -32,7 +32,6 @@ def is_blocked_time():
 current_date = datetime.now().date()
 st.title('Daily quiz')
 st.write(current_date.strftime('%d/%m/%y'))
-st.write(str(datetime.now().time())[:-7])
 # Get input from the user
 name = st.text_input('Enter Name')
 email = st.text_input('Enter your college mail id (ex: 23cb000@drngpit.ac.in)')

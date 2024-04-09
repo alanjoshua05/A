@@ -93,7 +93,7 @@ if selected == "Daily quiz":
             st.balloons()
 
 if selected == "PYQs":
-    st.title("Previous questions")
+    st.title("Previous year questions")
     st.subheader("Internal 1")
     if st.button('Engineering Economics with Applications'):
         webbrowser.open_new_tab("https://drive.google.com/file/d/1J8ZWpcczv39NRvD1T-SY7K1LubqymIBl/view?usp=sharing")

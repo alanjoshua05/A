@@ -63,7 +63,7 @@ current_date = datetime.now().date()
 with st.sidebar:
      selected = option_menu(
           menu_title="1st Year CSBS",
-          options=["Daily quiz","Coding practice","PYQs"]
+          options=["Daily quiz","Coding practice"]
      )
 if selected == "Daily quiz":
     
@@ -92,21 +92,21 @@ if selected == "Daily quiz":
             st.success("Added successfully")
             st.balloons()
 
-if selected == "PYQs":
-    st.title("Previous questions")
-    st.subheader("Internal 1")
-    if st.button('Engineering Economics with Applications'):
-        webbrowser.open(url="https://drive.google.com/file/d/1J8ZWpcczv39NRvD1T-SY7K1LubqymIBl/view")
-    # if st.button('Python Programming'):
-    #     webbrowser.open("#")
-    if st.button('Technical English'):
-        webbrowser.open("https://drive.google.com/file/d/1JT4JYF2w0gFV5DgUGyQJzGqC3j4rVZfs/view?usp=sharing")
-    # if st.button('Linear Algebra'):
-    #     webbrowser.open("#")
-    # if st.button('Physics for Information Science'):
-    #     webbrowser.open("#")
-    if st.button('Digital Principles and System Design'):
-        webbrowser.open("https://drive.google.com/file/d/1JJoTvviMBcwVmb2IZt1tPbQpSMYOlkCw/view?usp=sharing")
+# if selected == "PYQs":
+#     st.title("Previous questions")
+#     st.subheader("Internal 1")
+#     if st.button('Engineering Economics with Applications'):
+#         webbrowser.open(url="https://drive.google.com/file/d/1J8ZWpcczv39NRvD1T-SY7K1LubqymIBl/view")
+#     if st.button('Python Programming'):
+#         webbrowser.open("#")
+#     if st.button('Technical English'):
+#         webbrowser.open("https://drive.google.com/file/d/1JT4JYF2w0gFV5DgUGyQJzGqC3j4rVZfs/view?usp=sharing")
+#     if st.button('Linear Algebra'):
+#         webbrowser.open("#")
+#     if st.button('Physics for Information Science'):
+#         webbrowser.open("#")
+#     if st.button('Digital Principles and System Design'):
+#         webbrowser.open("https://drive.google.com/file/d/1JJoTvviMBcwVmb2IZt1tPbQpSMYOlkCw/view?usp=sharing")
 
 if selected=="Coding practice":
     python()

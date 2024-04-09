@@ -97,8 +97,6 @@ if selected == "PYQs":
     st.subheader("Internal 1")
     if st.button('Engineering Economics with Applications'):
         webbrowser.open("#")
-    if st.button('Engineering Grapics'):
-        webbrowser.open("#")
     if st.button('Python Programming'):
         webbrowser.open("#")
     if st.button('Technical English'):

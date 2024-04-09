@@ -96,7 +96,7 @@ if selected == "PYQs":
     st.title("Previous year questions")
     st.subheader("Internal 1")
     if st.button('Engineering Economics with Applications'):
-        webbrowser.open("#")
+        webbrowser.open("https://drive.google.com/file/d/1J8ZWpcczv39NRvD1T-SY7K1LubqymIBl/view?usp=sharing")
     if st.button('Python Programming'):
         webbrowser.open("#")
     if st.button('Technical English'):

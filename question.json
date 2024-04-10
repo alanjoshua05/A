@@ -1,5 +1,5 @@
 {
-    "Question 1": "What are the basic data types in Python?",
+    "Question 1": "Explain the difference between list and tuples in python? ",
     "Question 2": "How are you?",
     "Code question": "Write a python programme to find the greatest of 3 numbers using if,else and elif. The numbers are 83,65,31"
 }

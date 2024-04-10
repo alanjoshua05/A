@@ -63,7 +63,7 @@ current_date = datetime.now().date()
 with st.sidebar:
      selected = option_menu(
           menu_title="1st Year CSBS",
-          options=["Daily quiz","Coding practice"]
+          options=["Daily quiz","Coding practice","PYQs"]
      )
 if selected == "Daily quiz":
     

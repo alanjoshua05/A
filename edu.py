@@ -97,17 +97,17 @@ if selected == "PYQs":
     st.subheader("Internal 1")
     if st.button('Engineering Economics with Applications'):
         st.markdown("[Engineering Economics with Applications](https://drive.google.com/file/d/1J8ZWpcczv39NRvD1T-SY7K1LubqymIBl/view)")
-    # if st.button('Python Programming'):
-    #     st.info("This will be updated soon")
+    if st.button('Python Programming'):
+        st.info("This will be updated soon")
         # st.markdown("[Python Programming](#)")
     if st.button('Technical English'):
         st.markdown("[Technical English](https://drive.google.com/file/d/1JT4JYF2w0gFV5DgUGyQJzGqC3j4rVZfs/view?usp=sharing)")
-    # if st.button('Linear Algebra'):
-    #     # st.markdown("[Linear Algebra](#)")
-    #     st.info("This will be updated soon")
-    # if st.button('Physics for Information Science'):
-    #     # st.markdown("[Physics for Information Science](#)")
-    #     st.info("This will be updated soon")
+    if st.button('Linear Algebra'):
+        # st.markdown("[Linear Algebra](#)")
+        st.info("This will be updated soon")
+    if st.button('Physics for Information Science'):
+        # st.markdown("[Physics for Information Science](#)")
+        st.info("This will be updated soon")
     if st.button('Digital Principles and System Design'):
         st.markdown("[Digital Principles and System Design](https://drive.google.com/file/d/1JJoTvviMBcwVmb2IZt1tPbQpSMYOlkCw/view?usp=sharing)")
 

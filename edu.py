@@ -78,19 +78,19 @@ if selected == "Daily quiz":
     st.subheader("Questions")
 
     q1 = st.text_area(f"1){data['Question 1']}")
+    st.info("The testing period has been finished")
 
-
-    if st.button("Submit",type='primary'):
-        if "@drngpit.ac.in" not in email or len(email) > 21:
-            st.error("Enter your college mail id correctly")
-        elif is_blocked_time():
-            st.error("Sorry, the quiz has been timed out.")
-        else:
+    # if st.button("Submit",type='primary'):
+    #     if "@drngpit.ac.in" not in email or len(email) > 21:
+    #         st.error("Enter your college mail id correctly")
+    #     elif is_blocked_time():
+    #         st.error("Sorry, the quiz has been timed out.")
+    #     else:
     
-            # Update the sheet with the entered data
-            sheet.append_row([current_date.strftime('%Y-%m-%d'), name, email, q1])
-            st.success("Added successfully")
-            st.balloons()
+    #         # Update the sheet with the entered data
+    #         sheet.append_row([current_date.strftime('%Y-%m-%d'), name, email, q1])
+    #         st.success("Added successfully")
+    #         st.balloons()
 
 if selected == "PYQs":
     st.title("Previous questions")

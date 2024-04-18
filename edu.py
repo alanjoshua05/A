@@ -96,17 +96,17 @@ if selected == "PYQs":
     st.title("Previous questions")
     st.subheader("Internal 1")
     if st.button('Engineering Economics with Applications'):
-        webbrowser.open(url="https://drive.google.com/file/d/1J8ZWpcczv39NRvD1T-SY7K1LubqymIBl/view")
+        st.markdown("[Engineering Economics with Applications](https://drive.google.com/file/d/1J8ZWpcczv39NRvD1T-SY7K1LubqymIBl/view)")
     if st.button('Python Programming'):
-        webbrowser.open("#")
+        st.markdown("[Python Programming](#)")
     if st.button('Technical English'):
-        webbrowser.open("https://drive.google.com/file/d/1JT4JYF2w0gFV5DgUGyQJzGqC3j4rVZfs/view?usp=sharing")
+        st.markdown("[Technical English](https://drive.google.com/file/d/1JT4JYF2w0gFV5DgUGyQJzGqC3j4rVZfs/view?usp=sharing)")
     if st.button('Linear Algebra'):
-        webbrowser.open("#")
+        st.markdown("[Linear Algebra](#)")
     if st.button('Physics for Information Science'):
-        webbrowser.open("#")
+        st.markdown("[Physics for Information Science](#)")
     if st.button('Digital Principles and System Design'):
-        webbrowser.open("https://drive.google.com/file/d/1JJoTvviMBcwVmb2IZt1tPbQpSMYOlkCw/view?usp=sharing")
+        st.markdown("[Digital Principles and System Design](https://drive.google.com/file/d/1JJoTvviMBcwVmb2IZt1tPbQpSMYOlkCw/view?usp=sharing)")
 
 if selected=="Coding practice":
     python()

@@ -63,7 +63,7 @@ current_date = datetime.now().date()
 with st.sidebar:
      selected = option_menu(
           menu_title="1st Year CSBS",
-          options=["Daily quiz","Coding practice","PYQs"]
+          options=["Daily quiz","Coding practice","Internal 1"]
      )
 if selected == "Daily quiz":
     
@@ -92,7 +92,7 @@ if selected == "Daily quiz":
     #         st.success("Added successfully")
     #         st.balloons()
 
-if selected == "PYQs":
+if selected == "Internal 1":
     st.title("Previous questions")
     st.subheader("Internal 1")
     if st.button('Engineering Economics with Applications'):

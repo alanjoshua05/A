@@ -78,7 +78,7 @@ if selected == "Daily quiz":
     st.subheader("Questions")
 
     q1 = st.text_area(f"1){data['Question 1']}")
-    st.info("The testing period has been completed!")
+    st.info("This has been temporarily paused for improvement and optimization")
 
     # if st.button("Submit",type='primary'):
     #     if "@drngpit.ac.in" not in email or len(email) > 21:

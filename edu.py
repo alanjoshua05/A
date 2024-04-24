@@ -67,7 +67,7 @@ with st.sidebar:
      )
 if selected == "Daily quiz":
     
-    st.title('Daily quiz')
+    st.title('Daily Quiz')
     st.write(current_date.strftime('%d/%m/%y'))
 
 # Get input from the user

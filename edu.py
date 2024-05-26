@@ -114,4 +114,7 @@ if a == 'Day 3':
             st.balloons()
 
 if a == 'Day 4':
-          st.info("The questions will be released soon")
+          st.info("The Questions will be released soon")
+
+if a == 'Day 5':
+          st.info("The Questions will be released soon")

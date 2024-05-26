@@ -112,3 +112,6 @@ if a == 'Day 3':
             sheet.append_row([data['Day_3']['Date'], name, email, q1])
             st.success("Added successfully")
             st.balloons()
+
+if a == 'Day 4':
+          st.info("The questions will be released soon")

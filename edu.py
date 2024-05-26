@@ -8,7 +8,7 @@ import webbrowser
 import sys
 from io import StringIO
 
-st.sidebar.title("Daily Quiz")
+st.sidebar.title("Daily")
 a = st.sidebar.selectbox("Week 1",['Day 1','Day 2','Day 3','Day 4','Day 5'])
 
 scopes = ['https://www.googleapis.com/auth/spreadsheets',

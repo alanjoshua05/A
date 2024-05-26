@@ -1,6 +1,22 @@
 {
-    "Question 1": "How do you convert one datatype to another in python? ",
-    "Question 2": "How are you?",
-    "Code question": "Write a python programme to find the greatest of 3 numbers using if,else and elif. The numbers are 83,65,31"
+    "Day_1": {
+        "Question":"hello",
+        "Date":"1234"
+    },
+    "Day_2": {
+        "Question":"hi",
+        "Date":"1234" 
+    },
+    "Day_3": {
+        "Question":"hello",
+        "Date":"2024-05-27"   
+    },
+    "Day_4": {
+        "Question":"hello",
+        "Date":"1234"
+    },
+    "Day_5": {
+        "Question":"hello",
+        "Date":"1234"
+    }
 }
-  

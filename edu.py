@@ -10,8 +10,6 @@ from io import StringIO
 
 st.sidebar.title("Daily Quiz")
 a = st.sidebar.selectbox("Week 1",['Day 1','Day 2','Day 3','Day 4','Day 5'])
-st.sidebsr.title("GPA Calculator")
-gpa = st.button("GPA")
 
 scopes = ['https://www.googleapis.com/auth/spreadsheets',
           "https://www.googleapis.com/auth/drive"]
